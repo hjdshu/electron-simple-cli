@@ -59,11 +59,13 @@ function createWindow() {
   }
 
   // and load the index.html of the app.
+  // 开发环境
   if (!app.isPackaged) {
     mainWindow.loadURL('http://localhost:3939/')
     // Open the DevTools.
     mainWindow.webContents.openDevTools()
   } else {
+    // 打包环境
     mainWindow.loadFile('./dist/index.html')
   }
 
