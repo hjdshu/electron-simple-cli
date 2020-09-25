@@ -13,21 +13,21 @@
   }
 
 ```
-### 目前是在windows电脑上开发测试和开发的，如果是mac，需要注意外面package.json里build的配置
+#### 目前是在windows电脑上开发测试和开发的，如果是mac，需要注意外面package.json里build的配置
 
-1. 开发: (开发模式只需要用到app目录就可以了)
+### 1. 开发: (开发模式只需要用到app目录就可以了)
 ```
 cd app
 yarn 
 yarn start
 ```
 
-2. 打包：（在最外层目录）
+### 2. 打包：（在最外层目录）
 ```
 yarn 
 yarn app
 ```
-3. 注意打包的时候，终端必须科学上网
+### 3. 注意打包的时候，终端必须科学上网
 ```
 cmd下配置
 set http_proxy=http://127.0.0.1:xxx
