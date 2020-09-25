@@ -32,6 +32,7 @@ function createWindow() {
     }
   })
 
+  // mac快捷键
   if (process.platform === 'darwin') {
     var template = [{
       label: "Application",
