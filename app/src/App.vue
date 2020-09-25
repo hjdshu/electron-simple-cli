@@ -2,6 +2,16 @@
   <div id="app">
     <button @click="copy">复制下面这段字</button>
     <input type="text" v-model="val">
+    <!-- <div>
+      <router-link to="/">去首页 </router-link>
+      <router-link to="/about">去关于</router-link>
+    </div>   -->
+    <div>
+      <a class="go" @click="go('#/')">点击首页 &nbsp;&nbsp;</a>
+      <a class="go"  @click="go('#/about')">点击关于</a>
+    </div>
+    <br>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -31,6 +41,9 @@ export default {
     copy() {
       clipboardWrite(this.val)
     },
+    go (path) {
+      location.href = path
+    }
   },
 };
 </script>
