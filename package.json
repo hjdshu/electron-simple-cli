@@ -4,7 +4,7 @@
   },
   "author": "jake",
   "scripts": {
-    "package": "electron-builder",
+    "package": "electron-builder"
   },
   "build": {
     "productName": "hello electron",
