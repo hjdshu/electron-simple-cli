@@ -24,8 +24,11 @@ yarn start
 
 ### 2. 打包：（在最外层目录）
 ```
+cd app
+yarn build
+cd ../
 yarn 
-yarn app
+yarn package
 ```
 ### 3. 注意打包的时候，终端必须科学上网
 ```

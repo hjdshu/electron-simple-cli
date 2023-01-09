@@ -4,9 +4,7 @@
   },
   "author": "jake",
   "scripts": {
-    "build": "node ./build-app.js",
-    "pag": "electron-builder",
-    "app": "yarn build && electron-builder"
+    "package": "electron-builder",
   },
   "build": {
     "productName": "hello electron",
